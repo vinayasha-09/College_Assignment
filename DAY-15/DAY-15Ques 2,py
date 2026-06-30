@@ -1,0 +1,11 @@
+# Write a program to Rotate array left.
+
+def rotate_left(arr, d):
+    n = len(arr)
+    # slicing method
+    return arr[d:] + arr[:d]
+
+arr = [1, 2, 3, 4, 5]
+d = 2   # number of positions to rotate
+print("Original array:", arr)
+print("Array after left rotation:", rotate_left(arr, d))
